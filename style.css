@@ -1,21 +1,15 @@
 body {
+    all:unset;
+}
+
+.instagram-wrapper {
     width: 100%;
-    min-height: 100vh;
     background-color: #FAFAFA; /**/
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-}
-
-.instagram-wrapper {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #FAFAFA; /**/
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;    
+    flex-wrap: wrap;
 }
 
 .top-bar {
@@ -96,4 +90,79 @@ button {
     gap: 0rem;
     cursor: pointer;
     padding: 0;
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: auto;
+}
+
+.left-group {
+    display: flex;
+    padding: 0;
+    margin-top: 2.125rem;
+    width: 38.375rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.stories-bar {
+    width: 38.375rem;
+    height: 7.375rem;
+    margin-bottom: 1.5rem;
+    background-color: red;
+}
+
+.news-feed .container-1 {
+    width: 38.25rem;
+    height: 46.8125rem;
+    margin-bottom: 3.75rem;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-feed .container-2 {
+    width: 38.25rem;
+    height: 46.8125rem;
+    margin-bottom: 3.75rem;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-feed .container-3 {
+    width: 38.25rem;
+    height: 46.8125rem;
+    margin-bottom: 3.75rem;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    width: 38.25rem;
+    height: 38.25rem;
+}
+
+.right-group {
+    width: 18.75rem;
+    height: 37.5rem;
+    margin-top: 2.125rem;
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+    background-color: #0ff;
 }
