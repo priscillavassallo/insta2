@@ -4,25 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Instagram</title>
 </head>
 <body>
-    <div class="intagram-wrapper">
+    <div class="instagram-wrapper">
         <div class="top-bar">
             <div class="logo">
+                <ion-icon name="logo-instagram" class="icon"></ion-icon>
+                <div class="vl"></div>
+                <img src="./img/logo.png" class="instagram-logo" alt="instagram logo">
+            </div>
 
-            </div>
-            <div class="search-bar">
-    
-            </div>
+            <input class="search-bar" placeholder="Pesquisar">
+            </input>
+
             <div class="action-menu">
-
+                <button aria-label="Perfil"><ion-icon name="person-outline" class="icon"></ion-icon></button>
+                <button aria-label="Notificações"><ion-icon name="heart-outline" class="icon"></ion-icon></button>
+                <button aria-label="Explorar"><ion-icon name="compass-outline" class="icon"></ion-icon></button>
+                <button aria-label="Mensagens"><ion-icon name="paper-plane-outline" class="icon"></ion-icon></button>
             </div>
         </div>
 
         <div class="stories-bar">
             <div class="container container-1">
-
+                <img class="container" />
+                <!-- div.container img.container
+                -->
             </div>
             <div class="container container-2">
                 
@@ -128,3 +137,6 @@
             </div>
         </div>
     </div>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
