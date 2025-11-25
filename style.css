@@ -4,6 +4,7 @@ body {
 
 .instagram-wrapper {
     width: 100%;
+    height: 125rem;    
     background-color: #FAFAFA; /**/
     margin: 0;
     padding: 0;
@@ -34,12 +35,46 @@ body {
 }
 
 .vl {
-  border-left: 0.0625rem solid #DBDBDB;
-  height: 1.375rem;
+    border-left: 0.0625rem solid #DBDBDB;
+    height: 1.375rem;
+}
+
+.rectangle-int-top {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.rectangle-int-top-left {
+    display: flex;
+    width: 19rem;
+    padding-left: 0.9375rem;
+    padding-top: 0.625rem;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.875rem;
+}
+
+.rectangle-int-top-left .icon {
+    width: 1.375rem;
+    height: 1.375rem;
+    pointer-events: none;
+}
+
+.rectangle-int-top-right {
+    display: flex;
+    justify-content: flex-end;
+    width: 19rem;
+    padding-right: 1.10125rem;
+    padding-top: 0.625rem;
+}
+
+.rectangle-int-top-right .icon {
+    width: 1.375rem;
+    height: 1.375rem;
+    pointer-events: none;    
 }
 
 .logo .icon {
-    
     width: 1.375rem;
     height: 1.375rem;
 }
@@ -123,10 +158,6 @@ button {
     margin-bottom: 3.75rem;
     background-color: #fff;
     border: 1px solid lightgray;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .news-feed .container-2 {
@@ -135,10 +166,6 @@ button {
     margin-bottom: 3.75rem;
     background-color: #fff;
     border: 1px solid lightgray;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .news-feed .container-3 {
@@ -147,10 +174,49 @@ button {
     margin-bottom: 3.75rem;
     background-color: #fff;
     border: 1px solid lightgray;
+}
+
+.rectangle-ig {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: nowrap;
+    width: 38.25rem;
+    height: 3.8125rem;
+}
+
+.rectangle-ig-left {
+    display: flex;
+    width: 20rem;
+    height: 3.8125rem;
+    justify-content: flex-start;
     align-items: center;
+    flex-wrap: nowrap;
+    padding-left: 1.0625rem;
+}
+
+.rectangle-ig-address {
+    font-family: 'Roboto';
+    font-size: 0.875rem;
+    width: 6.8125rem;
+    height: 1.3125rem;
+    color: #262626;
+    margin-left: 0.9375rem;
+    font-weight: 500;
+}
+
+.ig {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.rectangle-ig-right {
+    display: flex;
+    width: 18.25rem;
+    height: 3.8125rem;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-right: 1.0625rem;
 }
 
 .photo {
@@ -165,4 +231,12 @@ button {
     margin-left: 1.875rem;
     margin-right: 1.875rem;
     background-color: #0ff;
+}
+
+/* media queries */
+
+@media (max-width: 85.375rem) {
+    .instagram-wrapper {
+        height: 125rem;
+    }
 }
