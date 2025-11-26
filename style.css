@@ -1,5 +1,10 @@
 body {
     all:unset;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 .instagram-wrapper {
@@ -27,8 +32,7 @@ body {
 .instagram-logo {
     width: 6.4375rem;
     height: 1.8125rem;
-    padding-top: 1.0625rem;
-    padding-bottom: 0.5rem;
+    display: block;
 }
 
 .logo {
@@ -38,6 +42,7 @@ body {
     flex-direction: row;
     font-size: 0.75rem;
     gap: 0.625rem;
+    padding: 0.67rem 0 0.5rem 0;
 }
 
 .vl {
@@ -103,6 +108,11 @@ a {
     color: inherit;        /**/
     text-decoration: none; /**/
     font-weight: inherit;  /**/
+}
+
+a-logo {
+    width: 1.375rem;
+    height: 1.375rem;
 }
 
 .rectangle-int-bottom .ig {
@@ -177,15 +187,17 @@ button {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
     width: auto;
+    overflow-x: hidden;
 }
 
 .left-group {
     display: flex;
     padding: 0;
     margin-top: 2.125rem;
-    width: 38.375rem;
+    max-width: 38.375rem;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -194,23 +206,13 @@ button {
 .stories-bar {
     display: flex;
     flex-wrap: nowrap;
-    width: 38.375rem;
+    max-width: 38.375rem;
+    width: 100%;
     height: 7.375rem;
     margin-bottom: 1.5rem;
     background-color: #fff;
     border: 1px solid lightgray;
-}
-
-.stories-item-first {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 5rem;
-    height: 5.375rem;
-    margin-top: 1.125rem;
-    margin-left: 1.125rem;
-    margin-bottom: 0.875rem;
-    overflow: hidden;
+    padding-left: 1.125rem;
 }
 
 .stories-item {
@@ -221,15 +223,17 @@ button {
     height: 5.375rem;
     margin-top: 1.125rem;
     margin-bottom: 0.875rem;
-   
 }
 
 .stories-ig {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
+    width: 4.125rem;
     height: 4.125rem;
+    border-radius: 50%;
+    padding-left: 2.4375rem;
+    padding-right: 2.4375rem;
     background-image:url("./img/stories-background.jpg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -258,7 +262,7 @@ button {
 }
 
 .news-feed .container {
-    width: 38.25rem;
+    width: 100%;
     height: 46.8125rem;
     margin-bottom: 3.75rem;
     background-color: #fff;
@@ -291,7 +295,7 @@ button {
 }
 
 .rectangle-ig-left .ig {
-    width: 2rem;
+    max-width: 2rem;
     height: 2rem;
     border-radius: 50%;
 }
@@ -307,9 +311,10 @@ button {
 }
 
 .photo {
-    max-width: 38.25rem;
     width: 100%;
     height: 38.25rem;
+    display: flex;
+    align-items: stretch;
 }
 
 .right-group {
@@ -337,11 +342,11 @@ button {
     .stories-bar {
         background-color: transparent;
         border: none;
+        width: 100%;
     }
     .news-feed .container {
         width: 100%;
     }
-    
     .top-bar {
         padding: 0rem 1.25rem;
     }
@@ -360,6 +365,55 @@ button {
         align-items: center;
         width: 6.4375rem;
         height: 1.8125rem;
+        padding-top: 0.4rem;
+    }
+    .vl {
+        display: none;
+    }
+    .search-bar {
+        display: none;
+    }
+    .button-profile {
+        display: none;
+    }
+    .button-notifications {
+        display: none;
+    }
+    .button-explorer {
+        display: none;
+    }
+}
+
+@media (max-width: 38.4375rem) {
+    .stories-bar {
+        background-color: transparent;
+        border: none;
+        width: 100%;
+    }
+    .news-feed .container {
+        width: 100%;
+        border-left: none;
+        border-right: none;
+    }
+    .top-bar {
+        padding: 0rem 1.25rem;
+    }
+    .logo {
+        justify-content: flex-start;
+    }
+    .action-menu {
+        justify-content: flex-end;
+    }
+    .logo .instagram-logo {
+        display: none;
+    }
+    .mobile-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 6.4375rem;
+        height: 1.8125rem;
+        padding-top: 0.4rem;
     }
     .vl {
         display: none;
