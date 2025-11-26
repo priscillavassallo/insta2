@@ -113,8 +113,10 @@ a {
 }
 
 .logo .icon {
+    padding-top: 0.125rem;
     width: 1.375rem;
     height: 1.375rem;
+    pointer-events: none;
 }
 
 .search-bar {
@@ -190,10 +192,69 @@ button {
 }
 
 .stories-bar {
+    display: flex;
+    flex-wrap: nowrap;
     width: 38.375rem;
     height: 7.375rem;
     margin-bottom: 1.5rem;
-    background-color: red;
+    background-color: #fff;
+    border: 1px solid lightgray;
+}
+
+.stories-item-first {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 5rem;
+    height: 5.375rem;
+    margin-top: 1.125rem;
+    margin-left: 1.125rem;
+    margin-bottom: 0.875rem;
+    overflow: hidden;
+}
+
+.stories-item {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 5rem;
+    height: 5.375rem;
+    margin-top: 1.125rem;
+    margin-bottom: 0.875rem;
+   
+}
+
+.stories-ig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 4.125rem;
+    background-image:url("./img/stories-background.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.stories-ig-picture {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+}
+
+.stories-ig-name {
+    display: block;
+    text-align: center;
+    line-height: 1.1875rem;
+    width: 4.875rem;
+    height: 1.1875rem;
+    margin-top: 0.2rem;
+    font-family: 'Roboto';
+    font-size: 0.75rem;
+    color: #262626;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .news-feed .container {
